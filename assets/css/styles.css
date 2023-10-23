@@ -3,8 +3,8 @@
   --yellow-dark: rgb(255, 250, 200);
   --yellow: rgb(254, 220, 42);
 
-  --purple-light: rgb(242, 187, 255);
-  --purple: rgb(106, 79, 113);
+  --purple-light: rgb(200, 154, 214);
+  --purple: #6a4f71;
 
   --grey: rgb(78, 67, 67);
   --grey-light: rgb(0, 0, 0, .2);
@@ -83,6 +83,8 @@ h3 {
   background-color: var(--white);
   padding: 15px;
   border: 1px solid var(--grey-light);
+  border-radius: 7px;
+  overflow: hidden;
 }
 
 .card1.yellow {
@@ -119,7 +121,9 @@ ul {
   list-style: none;
   padding: 0;
 }
-
+p{
+  margin: 0;
+}
 .x-half {
   font-size: .8em;
 }
@@ -135,12 +139,13 @@ ul {
 .btn-yellow {
   background-color: var(--yellow-light);
   border: 1px solid var(--grey-light);
-  padding: .5em 1.5em;
+  padding: .3em 1.2em;
   position: relative;
   z-index: 0;
-  font-size: 1.5em;
-  font-weight: bold;
+  font-size: 1.3em;
+  font-weight: 400;
   cursor: pointer;
+  color: var(--purple);
 }
 
 .btn-yellow::after {
@@ -165,7 +170,18 @@ ul {
   min-height: 250px;
 }
 
-#contact{
+#contact {
   background-color: var(--purple);
   color: var(--white);
+}
+
+#contact h2 {
+  font-weight: 100;
+}
+
+#contact textarea{
+  height: 150px!important;
+}
+::placeholder{
+  color: var(--grey-light)!important;
 }
