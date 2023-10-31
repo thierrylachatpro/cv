@@ -1,3 +1,7 @@
+const displayMessage = () => {
+  sentMessage.classList.remove('d-none');
+}
+
 const sendMail = (event) => {
     event.preventDefault();
 
@@ -8,7 +12,9 @@ const sendMail = (event) => {
         Subject : "Message de "+ lastname.value +" depuis le thierrylachat.fr",
         Body : message.value.replaceAll('\n','<br>') + '<br><br>'+ email.value
     }).then(
-      message => console.log(message)
+      message => {
+        sentMessage.classList.remove('d-none');
+      }
     );
 
 
