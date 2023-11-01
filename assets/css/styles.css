@@ -39,7 +39,7 @@ header{
 }
 
 footer{
-  background-color: var(--yellow-dark);
+  background-color: var(--yellow);
 }
 a {
   text-decoration: none;
