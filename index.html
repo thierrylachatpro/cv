@@ -41,24 +41,28 @@
     </header>
 
     <main>
+        <div id="download" class="d-flex justify-content-center align-items-center position-sticky">
+            <a href="./cv-thierry-lachat.pdf" target="_blank" class="fw-bold">
+                Télécharger mon cv
+            </a>
+        </div>
         <section id="quisuisje" class="mt-5">
             <!-- Qui sui-je -->
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-12 col-md-6 col-xl-3 text-center ">
+                    <div class="col-12 col-md-6 col-xl-3 text-center">
                         <img src="./assets/img/thierry-lachat-formateur-developpeur-amiens.PNG" class="w-75 img-fluid">
                     </div>
                     <div class="col-12 col-md-6 col-xl-7">
-                        <h1 class="text-center text-md-start my-4 my-md-0"><strong
-                                class="yellow-mark">Formateur</strong> web &
+                        <h1 class="text-center text-md-start my-4"><strong class="yellow-mark">Formateur</strong> web &
                             web mobile</h1>
-                        <p>
+                        <p class="mb-3">
                             Développeur pendant près de 20 ans, j’ai choisi de <span
                                 class="yellow-mark">transmettre</span>
                             mes compétences acquises sur le terrain, aux jeunes
                             passionnés par la <strong class="yellow-mark">création web.</strong>
                         </p>
-                        <p>
+                        <p class="mb-3">
                             Le fil conducteur de mon enseignement repose sur les grands principes du travail en
                             entreprise: <span class="yellow-mark">l’organisation</span>, le professionnalisme,
                             <span class="yellow-mark">l’agilité</span>, la confiance en soi, l’élocution...
@@ -81,7 +85,7 @@
             <!-- Formateur La Manu -->
             <div class="container-fluid">
                 <div class="row align-items-end">
-                    <div class="col-12 order-md-1 col-md-8 text-center align-self-center">
+                    <div class="col-12 order-md-1 col-md-6 offset-md-1 text-center align-self-center">
                         <span class="fw-bold">Actuellement et depuis plus de 3 ans</span>, j’occupe le poste de
                         formateur au sein d’une école spécialisée dans les métiers du numérique (la Manu) à Amiens.
                     </div>
@@ -264,13 +268,13 @@
                             class="yellow-mark">POO</strong> sont des domaines ou <span class="fst-italic">je prends le
                             plus de plaisir</span class="fs-italic"><br>
                         <i>❧</i>La Méthodologie <strong class="yellow-mark">Agile Scrum</strong>. <span
-                            class="fst-italic">jIncontournable dans mes formations!</span><br>
-                        <i>❧</i>Le language <strong class="yellow-mark">javascript</strong>. <span
-                            class="fst-italic">jSi simple et si complexe, mais tellement grisant</span> <br>
-                        <i>❧</i>Le language <strong>Python</strong>. Pour ma part, <span class="fst-italic">jcomment
+                            class="fst-italic">Incontournable dans mes formations!</span><br>
+                        <i>❧</i>Le language <strong class="yellow-mark">javascript</strong>. <span class="fst-italic">Si
+                            simple et si complexe, mais tellement grisant</span> <br>
+                        <i>❧</i>Le language <strong>Python</strong>. Pour ma part, <span class="fst-italic">comment
                             transmettre les bases de l’<strong class="yellow-mark">algorithmie</strong></span><br>
                         <i>❧</i>La <strong>modélisation</strong> et la <strong>conception</strong> de bases de données
-                        via la méthode <strong class="yellow-mark">Merise</strong>, ou <span class="fst-italic">jcomment
+                        via la méthode <strong class="yellow-mark">Merise</strong>, ou <span class="fst-italic">comment
                             donner vie à son projet.</span><br>
                         <i>❧</i>Le language <strong>SQL</strong>. <span class="fst-italic">A la fois simple et
                             performant</span><br>
@@ -341,7 +345,7 @@
                     <div class="col-12 col-lg-10">
                         <div class="card1">
                             <div class="row align-items-center">
-                                <div class="col-12 col-md-8">
+                                <div class="col-12 offset-md-1 col-md-6">
                                     <h3 class="text-start"><strong><span class="yellow-mark">Aniprev</strong></span>
                                     </h3>
 
@@ -434,9 +438,8 @@
                                             De très nombreux <strong class="yellow-mark">projets d’exercices</strong>
                                             pour mes élèves avec <strong class="yellow-mark">les corrigés</strong>, des
                                             sites web, des applications mobiles, des <strong>intranet et
-                                                extranet</strong>. Des travaux
-                                            tâches et travaux effectués pour des communautés de commune, <strong
-                                                class="yellow-mark">des mairies</strong>,
+                                                extranet</strong>. Des tâches et travaux effectués pour des communautés
+                                            de commune, <strong class="yellow-mark">des mairies</strong>,
                                             des fédérations, des hotels, des photographes...
 
                                         </p>
@@ -470,11 +473,13 @@
                             <div class="row justify-content-center">
                                 <div class="col-12 col-md-5">
                                     <p class="d-flex align-items-center mb-4">
-                                        <span class="x-triple me-2">➢</span> <span class="x-double">CV papier
-                                            (pdf)</span>
+                                        <a href="cv-thierry-lachat.pdf" target="_blank"><span
+                                                class="x-triple me-2">➢</span> <span class="x-double">CV papier
+                                                (pdf)</span></a>
                                     </p>
                                     <p class="x-half">
-                                        Vous souhaitez en savoir davantage sur moi, ou me proposer une mission?J’attends
+                                        Vous souhaitez en savoir davantage sur moi, ou me proposer une mission?
+                                        J’attends
                                         de vos nouvelles!
                                     </p>
                                     <div class="d-flex justify-content-center">
@@ -489,21 +494,21 @@
                                     <form id="formContact">
 
                                         <div class="form-group mb-3 w-50">
-                                            <input type="text" name="lastname" class="form-control"
+                                            <input type="text" name="lastname" id="lastname" class="form-control"
                                                 placeholder="Votre nom?" id="lastname" required>
                                         </div>
 
                                         <div class="form-group mb-3 w-75">
-                                            <input type="text" name="email" class="form-control"
+                                            <input type="text" name="email" id="email" class="form-control"
                                                 placeholder="Votre email?" id="email" required>
                                         </div>
 
                                         <div class="form-group mb-4">
-                                            <textarea name="message" class="form-control h-100"
+                                            <textarea name="message" id="message" class="form-control h-100"
                                                 placeholder="Dites-moi tout!!" id="message" required></textarea>
                                         </div>
-                                        <button class="btn-yellow purple" type="submit" id="sendmail">Envoyer!</button>
-                                        <div class="text-white d-none mt-4" id="sentMessage">Merci! Votre message a bien été envoyé!!</div>
+                                        <a href="" class="btn-yellow purple" type="submit" id="sendmail">Envoyer!</a>
+                                        <div class="text-white mt-4" id="sentMessage"></div>
                                     </form>
                                 </div>
                             </div>
