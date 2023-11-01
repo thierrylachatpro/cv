@@ -63,6 +63,12 @@ h1 {
 h2 {
   font-size: 1.9em;
 }
+#mentions {
+  color: var(--grey);
+}
+#mentions h2{
+  padding: 1.5em 0 0.2em 0;
+}
 
 h3 {
   font-size: 1.5em;
