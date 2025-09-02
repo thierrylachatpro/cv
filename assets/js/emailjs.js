@@ -1,9 +1,21 @@
- emailjs.init("9cAhnLmP5LNeBLdII"); // ID fourni par EmailJS
 
-  document.getElementById("formContact").addEventListener("submit", function(e) {
-    e.preventDefault();
+(function () {
+    // https://dashboard.emailjs.com/admin/account
+    emailjs.init({
+        publicKey: "9cAhnLmP5LNeBLdII",
+    });
+})();
 
-    emailjs.sendForm("service_eln7o86", "template_nyito7j", this)
-      .then(() => alert("Message envoyé ✅"))
-      .catch(err => alert("Erreur ❌ " + JSON.stringify(err)));
-  });
+
+window.onload = function () {
+    document.getElementById('formContact').addEventListener('submit', function (event) {
+        event.preventDefault();
+        // these IDs from the previous steps
+        emailjs.sendForm('service_eln7o86', 'template_nyito7j', this)
+            .then(() => {
+                console.log('SUCCESS!');
+            }, (error) => {
+                console.log('FAILED...', error);
+            });
+    });
+}
