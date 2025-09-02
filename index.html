@@ -553,10 +553,10 @@
 
                                 <div class="col-12 col-md-6 offset-md-1">
                                     <form id="formContact">
-
+<input type="hidden" name="title" value="CV en ligne">
                                         <div class="form-group mb-3 w-50">
-                                            <input type="text" name="lastname" id="lastname" class="form-control"
-                                                placeholder="Votre nom?" id="lastname" required>
+                                            <input type="text" name="name" id="name" class="form-control"
+                                                placeholder="Votre nom?" id="name" required>
                                         </div>
 
                                         <div class="form-group mb-3 w-75">
@@ -591,8 +591,8 @@
             </div>
         </div>
     </footer>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="./assets/js/sendmail.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="./assets/js/emailjs.js"></script>
 </body>
 
 </html>
