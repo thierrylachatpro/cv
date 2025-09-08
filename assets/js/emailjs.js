@@ -14,6 +14,7 @@ window.onload = function () {
         emailjs.sendForm('service_eln7o86', 'template_nyito7j', this)
             .then(() => {
                 console.log('SUCCESS!');
+                sentMessage.innerHTML = 'Merci! Votre message a bien été envoyé!!';
             }, (error) => {
                 console.log('FAILED...', error);
             });
